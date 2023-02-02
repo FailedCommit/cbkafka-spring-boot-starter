@@ -1,0 +1,11 @@
+# To make our configuration an auto-configuration, we list it in the file META-INF/spring.factories.
+#
+# An auto-configuration is a @Configuration class that is automatically discovered by Spring.
+# As soon as an auto-configuration is found on the classpath, it is evaluated and the configuration?s contribution
+# is added to the application context.
+# An auto-configuration may be conditional so that its activation depends on external factors like a certain
+# configuration parameter having a specific value.
+#
+# Spring Boot searches through all spring.factories files it finds on the classpath and loads the configurations declared within.
+# With the EventAutoConfiguration class in place, we now have an automatically activated single point of entry for our Spring Boot starter.
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.chargebee.EventAutoConfiguration
